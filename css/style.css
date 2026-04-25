@@ -1,0 +1,84 @@
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#f5f7fb;
+}
+
+/* HEADER */
+header{
+background:#0B5ED7;
+color:white;
+display:flex;
+justify-content:space-between;
+padding:15px;
+}
+
+/* HERO */
+.hero{
+display:flex;
+justify-content:space-between;
+padding:30px;
+background:white;
+}
+
+.hero-left{
+width:50%;
+}
+
+.hero-right{
+width:45%;
+}
+
+/* BOOK PANEL */
+.book-box{
+background:#0B5ED7;
+padding:20px;
+border-radius:10px;
+color:white;
+}
+
+.book-box input,select{
+width:100%;
+padding:10px;
+margin:5px 0;
+border:none;
+border-radius:5px;
+}
+
+.book-box button{
+width:100%;
+padding:10px;
+background:#28a745;
+color:white;
+border:none;
+}
+
+/* SERVICES */
+.grid{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:center;
+padding:20px;
+}
+
+.card{
+background:white;
+width:180px;
+padding:10px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:80px;
+}
+
+/* STATS */
+.stats{
+display:flex;
+justify-content:space-around;
+padding:20px;
+background:white;
+}

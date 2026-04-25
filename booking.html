@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="css/style.css">
+<script>
+function getService(){
+const urlParams = new URLSearchParams(window.location.search);
+document.getElementById("service").value = urlParams.get("service");
+}
+</script>
+<title>Booking - USEVA.in</title>
+</head>
+
+<body onload="getService()">
+
+<header>
+<h2>Book Service</h2>
+</header>
+
+<form action="backend/booking.php" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="text" name="phone" placeholder="Mobile Number" required>
+
+<select name="service" id="service">
+<option value="">Select Service</option>
+<option>AC Repair</option>
+<option>Fridge Repair</option>
+<option>Washing Machine</option>
+<option>Electrician</option>
+<option>Beauty Service</option>
+<option>Cleaning</option>
+</select>
+
+<input type="text" name="address" placeholder="Your Address">
+
+<button type="submit">Confirm Booking</button>
+
+</form>
+
+<br>
+
+<center>
+<a href="https://wa.me/918789196578">
+<button>Book on WhatsApp</button>
+</a>
+</center>
+
+</body>
+</html>
